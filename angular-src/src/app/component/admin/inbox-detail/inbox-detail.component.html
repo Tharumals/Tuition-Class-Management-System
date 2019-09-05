@@ -1,0 +1,42 @@
+<app-sidebar>
+
+<div id="card" class="main-section">
+
+  <h1><b>Message Details</b></h1>
+
+
+  <div class="button-row">
+    <a mat-raised-button color="primary" [routerLink]="['/inbox']">
+      <i class="fa fa-bar"> BACK</i>
+    </a>
+  </div>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{message.registerNumber}}</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <dl>
+      <dt>First Name:</dt>
+      <dd>{{message.firstName}}</dd>
+      <dt>Last Name:</dt>
+      <dd>{{message.lastName}}</dd>
+      <dt>Grade:</dt>
+      <dd>{{message.grade}}</dd>
+      <dt>Date:</dt>
+      <dd>{{message.date}}</dd>
+      <dt>Message:</dt>
+      <dd>{{message.message}}</dd>
+    </dl>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-raised-button color="warn" (click)="deleteMessage(message._id)">
+      
+    </a>
+  </mat-card-actions>
+</mat-card>
+</div>
+
+</app-sidebar>

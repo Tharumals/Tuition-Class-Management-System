@@ -1,0 +1,43 @@
+.sidenav-container {
+  height: 100%;
+}
+
+mat-icon{
+  font-family: 'Material Icons' !important;
+}
+
+.sidenav {
+  width: 300px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+}
+body{
+  margin: 0;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+mat-toolbar a{
+  display: inline-block;
+  margin: 0 20px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+mat-nav-list a{
+  font-weight: 300px;
+  font-size: 18px;
+  color: black;
+}
+
+a:hover{
+  background-color: blueviolet;
+  padding: 10px 10px 10px 10px;
+}
+
+
+
+i{
+  margin-right: 10px;
+
+}

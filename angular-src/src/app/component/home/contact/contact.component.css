@@ -1,0 +1,25 @@
+#contact {
+  background:url('../../../../assets/images/about.jpg') 50% 0 repeat-y fixed;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+
+#contact h1 {
+  font-size: 40px;
+  color: #85CE36;
+  padding-bottom: 10px;
+}
+
+#contact .contact-info {
+  border: 2px solid #ffffff;
+  padding: 40px;
+  transition: all 0.4s linear;
+  margin-bottom: 20px;
+  background: #85CE36;
+}
+
+
+#contact .contact-info:hover {
+  border: 2px solid black;
+}

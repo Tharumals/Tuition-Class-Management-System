@@ -1,0 +1,105 @@
+<app-sidebar>
+
+
+<div id="outbox">
+  <div class="container">
+    <div class="space">
+  
+        
+<div class="col-md-12 col-sm-12">
+  <form id="register-form" [formGroup]="payForm" (ngSubmit)="onSubmit()" class="col-md-12 col-sm-12">
+
+    <div class="section-title ">
+      <h2>PAYMENT</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class=" col-md-11 row">
+
+        <div class="col-md-6 col-sm-6">
+          <label for="paymentId">Payment ID</label>
+          <input type="text" class="form-control" name="paymentId" placeholder=" Payment Number" formControlName="paymentId"
+            [ngClass]="{ 'is-invalid': submitted && f.paymentId.errors }" />
+          <div *ngIf="submitted && f.paymentId.errors" class="invalid-feedback">
+            <div *ngIf="f.paymentId.errors.required">PaymentID is required</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <label for="studentId">StudentID</label>
+          <input type="text" class="form-control" name="studentId" placeholder="Student ID" formControlName="studentId"
+            [ngClass]="{ 'is-invalid': submitted && f.studentId.errors }" />
+          <div *ngIf="submitted && f.studentId.errors" class="invalid-feedback">
+            <div *ngIf="f.studentId.errors.required">StudentId is required</div>
+          </div>
+        </div>
+
+         <div class="col-md-6 col-sm-6">
+          <label for="subject">Subject </label>
+          <input type="text" class="form-control" name="subject" placeholder="Subject" formControlName="subject"
+            [ngClass]="{ 'is-invalid': submitted && f.subject.errors }" />
+          <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+            <div *ngIf="f.subject.errors.required">Subject is required</div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-sm-6">
+          <label for="grade">Grade </label>
+          <input type="text" class="form-control" name="grade" placeholder="Grade" formControlName="grade"
+            [ngClass]="{ 'is-invalid': submitted && f.grade.errors }" />
+          <div *ngIf="submitted && f.grade.errors" class="invalid-feedback">
+            <div *ngIf="f.grade.errors.required">Grade is required</div>
+          </div>
+        </div>
+
+        
+        
+         <div class="col-md-6 col-sm-6">
+          <label for="month">Month </label>
+          <input type="text" class="form-control" name="month" placeholder="Month" formControlName="month"
+            [ngClass]="{ 'is-invalid': submitted && f.month.errors }" />
+          <div *ngIf="submitted && f.month.errors" class="invalid-feedback">
+            <div *ngIf="f.month.errors.required">Subject is required</div>
+          </div>
+        </div>
+
+         <div class="col-md-6 col-sm-6">
+          <label for="Amount">Amount</label>
+          <input type="text" class="form-control" name="Amount" placeholder="Amount" formControlName="amount"
+            [ngClass]="{ 'is-invalid': submitted && f.amount.errors }" />
+          <div *ngIf="submitted && f.amount.errors" class="invalid-feedback">
+            <div *ngIf="f.amount.errors.required">Amount is required</div>
+          </div>
+        </div>
+
+        
+
+
+
+        <div class="col-md-12 col-sm-12">
+          <label for="details">Details</label>
+          <input type="text" class="form-control" name="details" placeholder="Important Details" formControlName="details"/>
+        
+        </div>
+
+
+        <div class=" col-md-6 col-sm-6 sub-btn">
+          <button [disabled]="loading" class="btn btn-danger form-control ">Conform</button>
+        </div>
+
+        <div class=" col-md-6 col-sm-6 sub-btn">
+          <a [routerLink]="['/payment-table']" class="btn btn-warm form-control ">Previos Payments</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+</app-sidebar>

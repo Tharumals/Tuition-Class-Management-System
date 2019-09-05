@@ -1,0 +1,63 @@
+<app-student>
+
+<section id="contact" class="main-section">
+  <div class="container">
+    
+      <div class="about-header">
+        <h1><b>CONTACT</b></h1>
+      </div>
+      <hr>
+
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()"  id="contact-form" class="col-md-12 col-sm-12">
+        <div class=" col-md-12 col-sm-12 text-center">
+          <h2 class="heading">Contact Us</h2>
+          <hr>
+        </div>
+        <div class="row">
+        <div class="col-md-1">
+        </div>
+
+        <div class=" col-md-10 col-sm-10 row" >
+
+          <div class="col-md-6 col-sm-6">
+            <input name="firstName" type="text" class="form-control" id="firstName" placeholder="First Name" formControlName="firstName"  [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback" >
+               <div *ngIf="f.firstName.errors.required">First Name is required</div>
+             </div>
+         </div>
+          <div class="col-md-6 col-sm-6">
+            <input name="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name" formControlName="lastName"  [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+             <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback" >
+              <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <input name="registerNumber" type="text" class="form-control" id="registerNumber" placeholder="Registration Number" formControlName="registerNumber"  [ngClass]="{ 'is-invalid': submitted && f.registerNumber.errors }" />
+             <div *ngIf="submitted && f.registerNumber.errors" class="invalid-feedback" >
+              <div *ngIf="f.registerNumber.errors.required">register Number is required</div>
+             </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <input name="grade" type="text" class="form-control" id="grade" placeholder="Grade" formControlName="grade"  [ngClass]="{ 'is-invalid': submitted && f.grade.errors }" />
+             <div *ngIf="submitted && f.grade.errors" class="invalid-feedback" >
+               <div *ngIf="f.grade.errors.required">Grade is required</div>
+             </div>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <textarea name="message" rows="8" class="form-control" id="message" placeholder="Message" formControlName="message"  ></textarea>
+          </div>
+          <div class="col-md-12 col-sm-12 sub-btn">
+            <input [disabled]="loading" name="submit" type="submit" class="form-control btn btn-danger " id="submit" value="SUBMIT">
+          </div>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+        
+        </div>
+      </form>
+  </div>
+
+</section>
+
+</app-student>

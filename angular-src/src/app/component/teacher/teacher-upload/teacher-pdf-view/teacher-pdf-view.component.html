@@ -1,0 +1,25 @@
+
+
+<div class="container">
+  <div class="col-sm-9">
+    <pdf-viewer [src]="pageUrl" style="display: block; height: 600px; overflow-y: scroll"></pdf-viewer>
+  </div>
+  <div class="col-sm-2" style="float:right">
+    <h6 style="margin:5px 0;">
+      <tr><b>Title:</b>
+        <td style="padding-left: 10px; color: rgb(52, 35, 82)">
+      <tr>{{doc.title}}</tr>
+      </td>
+      </tr>
+    </h6>
+    <h6 style="margin:5px 0;">
+      <tr><b>Category:</b>
+        <td style="padding-left: 10px; color: rgb(52, 35, 82)">
+      <tr>{{doc.category}}</tr>
+      </td>
+      </tr>
+    </h6>
+  </div>
+
+
+</div>

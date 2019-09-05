@@ -1,0 +1,49 @@
+<app-sidebar>
+
+<div id="message" class="main-section">
+  <div class="container">
+
+    <h1><b>Student Payments</b></h1>
+
+<div class="payment_table">
+  <div class="example-container mat-elevation-z8">
+    <table mat-table #table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="month">
+        <th mat-header-cell *matHeaderCellDef> Month</th>
+        <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.month}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="grade">
+        <th mat-header-cell *matHeaderCellDef> Grade</th>
+        <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.grade}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="subject">
+        <th mat-header-cell *matHeaderCellDef>Subject</th>
+        <td mat-cell *matCellDef="let element"> {{element.subject}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="studentId">
+        <th mat-header-cell *matHeaderCellDef> StudentId</th>
+        <td mat-cell *matCellDef="let element"> {{element.studentId}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="paymentId">
+        <th mat-header-cell *matHeaderCellDef> PaymentId </th>
+        <td mat-cell *matCellDef="let element"> {{element.paymentId}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/payment-details/',row._id]"></tr>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+
+
+</app-sidebar>

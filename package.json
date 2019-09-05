@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "tution management app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.382.0",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "*",
+    "express-fileupload": "^1.0.0",
+    "file-saver": "^1.3.8",
+    "gridfs-stream": "^1.1.1",
+    "jsonwebtoken": "*",
+    "mongojs": "^2.6.0",
+    "mongoose": "*",
+    "morgan": "^1.9.1",
+    "multer": "^1.3.1",
+    "multer-gridfs-storage": "^3.2.3",
+    "ng2-file-upload": "^1.3.0",
+    "passport": "*",
+    "passport-jwt": "*",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "author": "tharumal",
+  "license": "ISC"
+}

@@ -1,0 +1,44 @@
+<app-teacher>
+
+<div id="card" class="main-section">
+
+<div class="container">
+  <h1><b>Request Details</b></h1>
+
+
+  <div class="button-row">
+    <a mat-raised-button color="primary" [routerLink]="['/teacher-request-table']">
+       <i class="fa fa-bar"> BACK</i>
+    </a>
+  </div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>
+        <h2>{{request.reason}}</h2>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <dl>
+        <dt>Subject:</dt>
+        <dd>{{request.subject}}</dd>
+        
+        <dt>Date:</dt>
+        <dd>{{request.date}}</dd>
+        <dt>Details:</dt>
+        <dd>{{request.details}}</dd>
+      </dl>
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-raised-button color="warn" (click)="deleteMessage(request._id)">
+       
+      </a>
+    </mat-card-actions>
+  </mat-card>
+  </div>
+</div>
+
+
+
+
+
+</app-teacher>

@@ -1,0 +1,73 @@
+<app-student>
+
+<mat-card class="card-01">
+  <mat-card-header>
+    <div mat-card-avatar class="fa fa-user fa-2x"></div>
+    <mat-card-title>WELCOME TO STUDENT PAGE</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <h6></h6>
+    <h6></h6>
+
+  </mat-card-content>
+
+</mat-card>
+<app-user-profile></app-user-profile>
+
+<section id="welcome" class="main-section">
+  <div class="container">
+    <div class="row">
+      
+
+        <mat-card class="card">
+            <mat-card-header>
+                <mat-card-title>STUDENT MESSAGES</mat-card-title>
+           </mat-card-header>
+
+           <mat-card-content>
+             <h6>Click the button and see all messages</h6>
+           </mat-card-content>
+  
+           <div class="example-button-row">
+            <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/student-messages']">SHOW Messages</a>
+          </div>
+
+        </mat-card>
+
+
+          <mat-card class="card">
+             <mat-card-header>
+               <mat-card-title>DOWNLOAD</mat-card-title>
+             </mat-card-header>
+
+             <mat-card-content>
+              <h6>Click the button and see all the available file</h6>
+             </mat-card-content>
+
+           <div class="example-button-row">
+             <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/student-downloads']">SHOW Files</a>
+           </div>
+
+          </mat-card>
+
+
+          <mat-card class="card">
+             <mat-card-header>
+               <mat-card-title>NEW EVENTS</mat-card-title>
+             </mat-card-header>
+
+             <mat-card-content>
+              <h6>Click the button and see all the available events</h6>
+             </mat-card-content>
+
+           <div class="example-button-row">
+             <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/student-events']">SHOW Events</a>
+           </div>
+
+          </mat-card>
+
+    </div>
+  </div>
+
+</section>
+</app-student>

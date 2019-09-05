@@ -1,0 +1,39 @@
+<app-teacher>
+
+<div id="message" class="main-section">
+  <div class="container">
+
+    <h1><b>Previous Messages</b></h1>
+<a mat-flat-button color="primary" class="nav-link" [routerLink]="['/teacher-outbox']">BACK </a>
+
+
+<div class="payment_table">
+  <div class="example-container mat-elevation-z8">
+    <table mat-table #table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> date</th>
+        <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.date}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="reason">
+        <th mat-header-cell *matHeaderCellDef> Reason</th>
+        <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.reason}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="subject">
+        <th mat-header-cell *matHeaderCellDef>Subject</th>
+        <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.subject}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/teacher-send-student-details/',row._id]"></tr>
+    </table>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</app-teacher>

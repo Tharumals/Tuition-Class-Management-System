@@ -1,0 +1,43 @@
+<app-teacher>
+
+<div id="card" class="main-section">
+
+  <div class="container">
+  <h1><b>Message Details</b></h1>
+
+
+<div class="button-row">
+  <a mat-raised-button color="primary" [routerLink]="['/teacher-send-student-table']">
+    <i class="fa fa-bar"> BACK</i>
+  </a>
+</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{message.reason}}</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <dl>
+      <dt>Subject:</dt>
+      <dd>{{message.subject}}</dd>
+      <dt>Grade:</dt>
+      <dd>{{message.grade}}</dd>
+      <dt>Date:</dt>
+      <dd>{{message.date}}</dd>
+      <dt>Message:</dt>
+      <dd>{{message.message}}</dd>
+    </dl>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-raised-button color="warn" (click)="deleteMessage(message._id)">
+     
+    </a>
+  </mat-card-actions>
+</mat-card>
+</div>
+</div>
+
+
+
+</app-teacher>

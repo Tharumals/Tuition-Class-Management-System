@@ -1,0 +1,47 @@
+<app-student>
+
+<div id="download" class="main-section">
+
+  <div class="container">
+
+   <div class="about-header">
+        <h1><b>DOWNLOAD</b></h1>
+      </div>
+      <hr>
+      
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      
+
+<form >
+<div class="col-md-12 card" style="margin-top:40px;">
+
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let file of files" class="col-md-3 text-center" style="padding:30px">
+        <div class="filecontainer" style="margin-bottom:100px;">
+          <img src="../../../../assets/images/PDF.jpg" alt="" style="width:80px;height:80px;">
+          <h6 style="margin-top:20px;margin-bottom:40px;">{{file.filename}}</h6>
+          <button class="btn btn-primary block" target="_self" (click)="downloadTheFile(file.filename)"><span>Download</span></button>
+          <!-- <button *ngIf="ifPDF(file.filename)"  class="btn btn-success block" (click)="viewTheFile(file.filename)"><span>View</span></button>                       -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-container *ngIf="files.length == 0">
+    <div class="container text-center" style="margin-top:20px;">
+      <h2 class="text-muted">No Files yet!</h2>
+    </div>
+  </ng-container>
+
+</div>
+</form>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  </div>
+</div>
+</app-student>

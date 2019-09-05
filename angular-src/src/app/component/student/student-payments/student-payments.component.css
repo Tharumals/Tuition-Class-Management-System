@@ -1,0 +1,62 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+  overflow: auto;
+}
+
+.isbn-col {
+  flex: 0 0 100px !important;
+  white-space: unset !important;
+}
+
+.button-row {
+  margin: 10px 0;
+}
+
+.payment_table{
+  padding: 50px 50px 50px 50px;
+}
+
+
+#payment {
+  background: url(../../../../assets/images/teachers.jpg) 50% 0 repeat-y fixed;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+#payment h1 {
+  font-size: 40px;
+  color: #85CE36;
+}
+
+#payment p {
+  font-size: 20px;
+}
+
+#payment h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #85CE36;
+}
+
+#payment h4 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: #85CE36;
+}
+
+#payment h6 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: whitesmoke;
+  padding-top: 10px;
+
+}
+
+th {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}

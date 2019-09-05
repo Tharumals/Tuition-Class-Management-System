@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer
+     class="sidenav" 
+     fixedInViewport=""
+      [attr.role]="isHandset ? 'dialog' : 'navigation'"
+        [mode]="(isHandset | async)!.matches ? 'over' : 'side'" 
+        [opened]="!(isHandset | async)!.matches">
+        <mat-toolbar color="primary">Menu</mat-toolbar>
+        <mat-nav-list>
+            <a  mat-list-item [routerLink]="['/admin']"> <i class="fa fa-dashboard fa 3x"></i>Dashboard</a>
+            <a  mat-list-item [routerLink]="['/student-register']"> <i class="fa fa-user fa 3x"></i>Students Register</a>
+            <a  mat-list-item [routerLink]="['/student-table']"><i class="fa fa-address-card fa 3x"></i>Students Information</a>
+             <a  mat-list-item [routerLink]="['/teacher-register']"><i class="fa fa-user fa 3x"></i>Teacher Register</a>
+             <a  mat-list-item [routerLink]="['/teacher-table']"><i class="fa fa-address-card fa 3x"></i>Teachers Information</a>
+            <a  mat-list-item [routerLink]="['/payment-pay']"><i class="fa fa-check fa 3x"></i>Payment</a>
+            <a  mat-list-item [routerLink]="['/payment-table']"><i class="fa fa-id-badge fa 3x"></i>Payment Information</a>
+             <a  mat-list-item [routerLink]="['/admin-new-event']"><i class="fa fa-users fa 3x"></i>Event</a>
+            <a  mat-list-item [routerLink]="['/admin-event-register']"><i class="fa fa-chalkboard-teacher fa 3x"></i>Event Register Information</a>
+            <a  mat-list-item [routerLink]="['/admin-account']"><i class="fa fa-users fa 3x"></i>Create Account</a>
+            <a  mat-list-item [routerLink]="['/account-issue']"><i class="fa fa-user fa 3x"></i>Accounts Issues</a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="(isHandset | async)!.matches">
+                <i class="fa fa-bars" aria-label="Side nav toggle icon"></i>
+            </button>
+            <span>Eagle College</span>
+            <span class="spacer"></span>
+            <a class="fa fa-envelope"mat-list-item [routerLink]="['/inbox']"></a>
+            <a class="fa fa-bell"mat-list-item [routerLink]="['/request']"></a>
+            <a mat-list-item  (click)="onLogout()"><i class="fa fa-user">LogOut</i></a>
+        </mat-toolbar>
+        <ng-content></ng-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,40 @@
+<app-student>
+
+  <div id="card">
+
+    <h1><b>payment Details</b></h1>
+
+
+
+    <div class="button-row">
+      <a mat-raised-button color="primary" [routerLink]="['/student-payments']">
+        <i class="fa fa-bar"> BACK</i>
+      </a>
+    </div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>
+          <h2>{{payment.month}}</h2>
+          <h3>{{payment.subject}}</h3>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <dl>
+           <dt>PaymentID:</dt>
+          <dd>{{payment.paymentId}}</dd>
+          <dt>Amount:</dt>
+          <dd>{{payment.payment}}</dd>
+          <dt>Date:</dt>
+          <dd>{{payment.date}}</dd>
+          <dt>Details:</dt>
+          <dd>{{payment.details}}</dd>
+        </dl>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-raised-button color="warn" (click)="deleteMessage(message._id)">
+        </a>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+</app-student>

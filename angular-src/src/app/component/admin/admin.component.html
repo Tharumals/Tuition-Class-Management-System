@@ -1,0 +1,109 @@
+<app-sidebar>
+    
+<section id="welcome" class="main-section">
+  <div class="container">
+    <div class="row">
+      
+
+        <mat-card class="card">
+            <mat-card-header>
+                <mat-card-title><h2>STUDENTS</h2></mat-card-title>
+           </mat-card-header>
+
+           <mat-card-content>
+             <h2><i class="fa fa-user fa 5x"></i>40 </h2>
+           </mat-card-content>
+  
+           <div class="example-button-row">
+            <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/student-table']">SHOW INFORMATIONS</a>
+          </div>
+
+        </mat-card>
+
+
+          <mat-card class="card">
+             <mat-card-header>
+               <mat-card-title><h2>TEACHERS</h2></mat-card-title>
+             </mat-card-header>
+
+             <mat-card-content>
+              <h2><i class="fa fa-user fa 5x"></i>10</h2>
+             </mat-card-content>
+
+           <div class="example-button-row">
+             <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/teacher-table']">SHOW INFORMATIONS</a>
+           </div>
+
+          </mat-card>
+
+
+          <mat-card class="card">
+             <mat-card-header>
+               <mat-card-title><h2>MESSAGES</h2></mat-card-title>
+             </mat-card-header>
+
+             <mat-card-content>
+              <h2><i class="fa fa-envelope fa 5x"></i>15</h2>
+             </mat-card-content>
+
+           <div class="example-button-row">
+             <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/inbox']">SHOW INFORMATIONS</a>
+           </div>
+
+          </mat-card>
+
+          
+        <mat-card class="card">
+            <mat-card-header>
+                <mat-card-title>STUDENT ACCOUNT</mat-card-title>
+           </mat-card-header>
+
+           <mat-card-content>
+             <h6>Create Student New Account</h6>
+           </mat-card-content>
+  
+           <div class="example-button-row">
+            <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/admin-account']">SHOW INFORMATIONS</a>
+          </div>
+
+        </mat-card>
+
+
+          <mat-card class="card">
+             <mat-card-header>
+               <mat-card-title>TEACHER ACCOUNT</mat-card-title>
+             </mat-card-header>
+
+               <mat-card-content>
+                <h6>Create Teacher New Account</h6>
+             </mat-card-content>
+  
+
+           <div class="example-button-row">
+             <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/admin-account']">SHOW INFORMATIONS</a>
+           </div>
+
+          </mat-card>
+
+
+          <mat-card class="card">
+             <mat-card-header>
+               <mat-card-title>PAYMENT</mat-card-title>
+             </mat-card-header>
+
+             <mat-card-content>
+              <h6>All Student payment details</h6>
+             </mat-card-content>
+
+           <div class="example-button-row">
+             <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/payment-pay']">SHOW INFORMATIONS</a>
+           </div>
+
+          </mat-card>
+
+    </div>
+  </div>
+
+</section>
+    
+</app-sidebar>

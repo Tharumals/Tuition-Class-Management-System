@@ -1,0 +1,110 @@
+#outbox{
+  background-color: gray;
+}
+
+.example-card {
+  max-width: 100%;
+
+}
+
+.space {
+  padding: 40px 40px 40px 40px;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container>* {
+  width: 100%;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+#event h1 {
+
+  font-size: 40px;
+  color: #85CE36;
+}
+
+#event h2 {
+  font-size: 30px;
+  color: black;
+  padding-left: 30px;
+}
+
+#event-form {
+  background-color: whitesmoke;
+  padding: 20px 20px 20px 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#register-form {
+  background-color: whitesmoke;
+  padding: 40px 40px 20px 20px;
+  border-radius: 20px;
+
+}
+
+#event form label {
+  padding-top: 20px;
+}
+
+#event-submit {
+  padding: 0px;
+  border-radius: 5px;
+}
+
+#event .form-control {
+
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+.sub-btn {
+  padding: 30px 30px 30px 30px;
+}
+
+#event p {
+  font-size: 15px;
+  color: black;
+}
+
+#event h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: rgb(49, 46, 46);
+}
+
+#event h4 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: gray;
+}
+
+#event h5 {
+  font-size: 18px;
+  margin-top: 15px;
+  color: red;
+  margin-bottom: 0px;
+}
+
+#event h6 {
+  font-size: 15px;
+  margin-top: 4px;
+  color: rgba(80, 75, 75, 0.918);
+}
+
+form {
+  background-color: whitesmoke;
+}

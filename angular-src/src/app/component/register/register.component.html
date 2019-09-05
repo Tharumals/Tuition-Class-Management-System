@@ -1,0 +1,50 @@
+<div  id="register">
+
+  <div class="row">
+<div class="col-md-2"></div>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" id="register-form" class="col-md-8">
+<h1>INFORM</h1>
+<hr>
+  <div class="row">
+    
+  <div class="col-md-1"></div>
+  <div class="col-md-10 col-sm-12">
+
+  <div class="form-group">
+    <label for="role">User Role</label>
+    <input type="text" formControlName="role" class="form-control" placeholder="Student or Teacher" [ngClass]="{ 'is-invalid': submitted && f.role.errors }" />
+    <div *ngIf="submitted && f.role.errors" class="invalid-feedback" >
+      <div *ngIf="f.role.errors.required">user Role is required</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="registerNumber">Register Number</label>
+    <input type="text" formControlName="registerNumber" class="form-control" placeholder="Your Register Number" [ngClass]="{ 'is-invalid': submitted && f.registerNumber.errors }" />
+    <div *ngIf="submitted && f.registerNumber.errors" class="invalid-feedback">
+      <div *ngIf="f.registerNumber.errors.required"> Please use your register Number</div>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <button [disabled]="loading" class="btn btn-danger">SEND</button>
+    <a [routerLink]="['/intro']" class="btn btn-link">Cancel</a>
+  </div>
+
+  <div class="col-md-12">
+      <hr>
+      <h6>If you have login issues please inform the admin</h6>
+    </div>
+    <hr>
+  <div>
+        <p>Copyright &copy; Eagle College</p>
+  </div>
+  </div>
+  <div class="col-md-1"></div>
+  </div>
+
+</form>
+<div class="col-md-2"></div>
+
+</div>
+</div>

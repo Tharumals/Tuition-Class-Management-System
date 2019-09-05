@@ -1,0 +1,179 @@
+@import'~bootstrap/dist/css/bootstrap.min.css';
+@import'~font-awesome/css/font-awesome.min.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+
+body {
+  background: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+hr{
+    background: #fff;
+   
+}
+
+
+p {
+  color: whitesmoke;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+.section-title {
+  margin-bottom: 32px;
+}
+
+.main-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+
+
+
+
+
+.navbar {
+  margin-bottom: 0;
+  background-color: black;
+}
+
+.navbar .navbar-brand {
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 40px;
+}
+
+.navbar .nav li a {
+  color: whitesmoke;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.navbar .navbar-toggle {
+  border: none;
+  padding-top: 10px;
+}
+
+.navbar .navbar-toggle {
+  background-color: transparent;
+}
+
+.navbar .navbar-toggle .icon-bar {
+  background: #ffffff;
+  border-color: transparent;
+}
+
+
+@media(min-width:500px) {
+  .navbar {
+    padding: 20px 0;
+    border-bottom: 0;
+    background: 0 0;
+  }
+
+  .navbar.top-nav-collapse {
+    background: black;
+    padding: 0;
+  }
+
+}
+
+
+
+
+
+footer {
+  background-attachment: fixed;
+  background-color: black;
+  padding: 0px;
+  height: 60px;
+
+}
+
+footer ul li {
+  text-align: left;
+}
+
+.social-media {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-media li a {
+  color: #666;
+  border-radius: 100px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 25px;
+}
+
+.social-media li a:hover {
+  background: white;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

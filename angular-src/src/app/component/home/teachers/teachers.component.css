@@ -1,0 +1,72 @@
+#teachers {
+  background:url(../.../../../../../assets/images/about.jpg)50% 0 repeat-y fixed;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+#teachers h1 {
+  font-size: 40px;
+  color: #85CE36;
+}
+
+#teachers p {
+  font-size: 20px;
+}
+
+#teachers h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #85CE36;
+}
+
+#teachers h4 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: #85CE36;
+}
+
+#teachers h6 {
+  font-size: 15px;
+  margin-top: 4px;
+  color: #85CE36;
+}
+
+#teachers img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+#teachers .col-md-3 {
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+
+}
+
+#teachers .teachers-wrapper {
+  background: transparent;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  
+  background-size: cover;
+}
+p{
+  color: black;
+  font-size: 5px;
+}
+
+mat-card{
+   margin:30px 30px 30px 30px;
+}

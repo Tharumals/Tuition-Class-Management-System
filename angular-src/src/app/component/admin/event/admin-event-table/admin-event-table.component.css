@@ -1,0 +1,42 @@
+#message {
+  background:whitesmoke 50% 0 repeat-y fixed;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#message h1 {
+  font-size: 40px;
+  color: #85CE36;
+  padding-bottom: 30px;
+  padding-top: 0px;
+}
+
+#message p {
+  font-size: 20px;
+}
+
+#message h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #85CE36;
+}
+
+#message h4 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: #85CE36;
+}
+
+#message h6 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: whitesmoke;
+  padding-top: 10px;
+
+}
+
+th {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}

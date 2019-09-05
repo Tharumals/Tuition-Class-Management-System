@@ -1,0 +1,150 @@
+<app-sidebar>
+<div id="outbox">
+  <div class="container">
+    <div class="space">
+
+
+      <div class="col-md-12 col-sm-12">
+        <form id="register-form" [formGroup]="studentForm" (ngSubmit)="onSubmit()" class="col-md-12 col-sm-12">
+
+          <div class="section-title ">
+            <h2>STUDENT REGISTER</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class=" col-md-11 row">
+
+              <div class="col-md-6 col-sm-6">
+                <label for="studentId">Student ID</label>
+                <input type="text" class="form-control" name="studentId" placeholder=" Student Register Number" formControlName="studentId"
+                  [ngClass]="{ 'is-invalid': submitted && f.studentId.errors }" />
+                <div *ngIf="submitted && f.studentId.errors" class="invalid-feedback">
+                  <div *ngIf="f.studentId.errors.required">Student Register Number is required</div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6">
+                <label for="date">Register Date</label>
+                <input type="date" class="form-control" name="date" placeholder="Date" formControlName="date"
+                  [ngClass]="{ 'is-invalid': submitted && f.date.errors }" />
+                <div *ngIf="submitted && f.date.errors" class="invalid-feedback">
+                  <div *ngIf="f.date.errors.required">Register Date is required</div>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-sm-12">
+                <h3>Personal Details</h3>
+              </div>
+
+              <div class="col-md-6 col-sm-6">
+                <label for="firstName">Student First Name </label>
+                <input type="text" class="form-control" name="firstName" placeholder="First Name" formControlName="firstName"
+                  [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                  <div *ngIf="f.firstName.errors.required">Student First Name  is required</div>
+                </div>
+              </div>
+
+             <div class="col-md-6 col-sm-6">
+                <label for="lastName">Student Last Name</label>
+                <input type="text" class="form-control" name="lastName" placeholder="Last Name" formControlName="lastName"
+                  [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                  <div *ngIf="f.lastName.errors.required">Student Last Name is required</div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6">
+                <label for="Gender">Gender</label>
+                <input type="text" class="form-control" name="gender" placeholder="Male or Female" formControlName="gender"
+                  [ngClass]="{ 'is-invalid': submitted && f.gender.errors }" />
+                 
+                <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+                  <div *ngIf="f.gender.errors.required">Student Gender  is required</div>
+                </div>
+              </div>
+
+                
+
+              <div class="col-md-6 col-sm-6">
+                <label for="school">School</label>
+                <input type="text" class="form-control" name="school" placeholder="school" formControlName="school"
+                  [ngClass]="{ 'is-invalid': submitted && f.school.errors }" />
+                <div *ngIf="submitted && f.school.errors" class="invalid-feedback">
+                  <div *ngIf="f.school.errors.required">Student School is required</div>
+                </div>
+              </div>
+
+              <div class="col-md-12 col-sm-12">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" name="address" placeholder="Address" formControlName="address"
+                  [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+                <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                  <div *ngIf="f.address.errors.required">Address is required</div>
+                </div>
+              </div>
+
+
+
+              <div class="col-md-6 col-sm-6">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" class="form-control" name="phoneNumber" placeholder="" formControlName="phoneNumber"
+                  [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }" />
+                <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+                  <div *ngIf="f.phoneNumber.errors.required">Phone number is required</div>
+                </div>
+              </div>
+
+              
+              <div class="col-md-6 col-sm-6">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" placeholder="@mail.com" formControlName="email"
+                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Email is required</div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="col-md-12 col-sm-12">
+                <label for="details">Details</label>
+                <input type="text" class="form-control" name="details" placeholder="Important Details" formControlName="details" />
+              </div>
+
+              <div class="col-md-12 col-md-12">
+                <h3>Accademic Details</h3>
+              </div>
+
+              <div class="col-md-12 col-sm-12">
+                <label for="grade">Grade</label>
+                <input type="text" class="form-control" name="grade" formControlName="grade"
+                  [ngClass]="{ 'is-invalid': submitted && f.grade.errors }" />
+                
+                <div *ngIf="submitted && f.grade.errors" class="invalid-feedback">
+                  <div *ngIf="f.grade.errors.required">Student Grade  is required</div>
+                </div>
+              </div>
+
+              
+              <div class=" col-md-6 col-sm-6 sub-btn">
+                <button [disabled]="loading" class="btn btn-danger form-control ">SAVE</button>
+              </div>
+
+              <div class=" col-md-6 col-sm-6 sub-btn">
+                <a [routerLink]="['/student-table']" class="btn btn-warm form-control ">Student Informations</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</app-sidebar>

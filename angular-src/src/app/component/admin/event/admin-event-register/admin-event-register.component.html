@@ -1,0 +1,40 @@
+<app-sidebar>
+
+<div id="message" class="main-section">
+  <div class="container">
+
+    <h1><b>Event Register Information</b></h1>
+
+  <div class="payment_table">
+    <div class="example-container mat-elevation-z8">
+      <table mat-table #table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef> Registered Date</th>
+          <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.date}} </td>
+        </ng-container>
+
+        
+
+        <ng-container matColumnDef="registerNumber">
+          <th mat-header-cell *matHeaderCellDef>Student ID</th>
+          <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.registerNumber}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="lectureIndex">
+          <th mat-header-cell *matHeaderCellDef>Lecture Number</th>
+          <td mat-cell *matCellDef="let element" class="isbn-col"> {{element.lectureIndex}} </td>
+        </ng-container>
+
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" [routerLink]="['/admin-event-register-details/',row._id]"></tr>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+</app-sidebar>

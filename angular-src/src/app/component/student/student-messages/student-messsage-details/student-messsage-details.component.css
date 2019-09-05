@@ -1,0 +1,24 @@
+.example-card {
+    max-width: 60%;
+    margin-left: 100px;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   padding-left: 50px;
+}
+
+
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+}
+
+#card {
+  background: url(../../../../../assets/images/teachers.jpg) 50% 0 repeat-y fixed;
+  padding-bottom: 100px;
+}
+
+#card h1 {
+  font-size: 35px;
+  color: #85CE36;
+  padding:40px 40px 40px 40px;
+}

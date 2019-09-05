@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+  <a class="navbar-brand mr-auto mr-lg-0" href="#">
+    <h1>Eagle College</h1>
+  </a>
+  <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+    <ul class="nav navbar-nav navbar-">
+      <li class="nav-item" [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}">
+        <a class="nav-link" [routerLink]="['/']">Home</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}" [routerLink]="['/student-intro']">
+        <a class="nav-link" [routerLink]="['/student-intro']"> INTRO</a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}" [routerLink]="['/student-messages']">
+        <a class="nav-link" [routerLink]="['/student-messages']">MESSEGES</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}" [routerLink]="['/student-downloads']">
+        <a class="nav-link" [routerLink]="['/student-downloads']">DOWNLOADS</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}" [routerLink]="['/student-events']">
+        <a class="nav-link" [routerLink]="['/student-events']">EVENTS</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}" [routerLink]="['/student-payments']">
+        <a class="nav-link" [routerLink]="['/student-payments']">PAYMENTS</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}" [routerLink]="['/student-contact']">
+       <a class="nav-link" [routerLink]="['/student-contact']">CONTACT</a>
+      </li>
+
+    </ul>
+
+     <span class="spacer"></span>
+
+    <ul class="nav navbar-nav navbar-rigth log">
+          
+      <li class="nav-item " [routerLinkActive]="[Active]" [routerLinkActiveOptions]="{Exact:true}" [routerLink]="['/intro']">
+        <a class="nav-link " [routerLink]="['/intro']" (click)="onLogout()" > LOG OUT</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>

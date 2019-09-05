@@ -1,0 +1,69 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+  overflow: auto;
+}
+
+.isbn-col {
+  flex: 0 0 100px !important;
+  white-space: unset !important;
+}
+
+.button-row {
+  margin: 10px 0;
+}
+
+.payment_table {
+  padding: 50px 50px 50px 50px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin:20px 20px 20px 20px;
+}
+
+
+#message {
+  background: url(../../../../../assets/images/teachers.jpg) 50% 0 repeat-y fixed;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+#message h1 {
+  font-size: 40px;
+  color: #85CE36;
+  padding-bottom: 30px;
+  padding-top:0px;
+}
+
+#message p {
+  font-size: 20px;
+}
+
+#message h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #85CE36;
+}
+
+#message h4 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: #85CE36;
+}
+
+#message h6 {
+  font-size: 20px;
+  margin-top: 4px;
+  color: whitesmoke;
+  padding-top: 10px;
+
+}
+
+th {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
